@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.contents {
+    color: crimson;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;   
+}
+
+#burger, #drink {
+     padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+      border: 1px dotted;
+}
+
+#burger {
+    background-color: black;
+    color: whitesmoke;
+  
+}
+
+#drink {
+    background-color: beige;
+    
+}
+
+#submit {
+    width: 200px;
+    margin: auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#header {
+    height: 400px;
+    background-image: url(unagi.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat-x;
+}
