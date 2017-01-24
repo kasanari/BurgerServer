@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title> Page title shown in window title </title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <main>
+        <h1> Välkommen till Burger Pub</h1>
+        <section>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <h2>Burgare</h2>
+                            <p>Välj en burgare.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <h3>Hamburgare</h3>
+                                <img width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg" />
+                                <ul>
+                                    <li>Innehåller: Äggprotein, mjölkprotein, Kattprotein</li>
+                                </ul>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <h3>"Hamburgare"</h3>
+                                <img width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Japanese_Soba_Noodles_Tsuta_01.jpg" />
+                                <ul>
+                                    <li>Innehåller: Gluten, fläsk, äggprotein</li>
+                                </ul>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <h3>Hamburgare deluxe</h3>
+                                <img width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Hamburger_%285%29.jpg" />
+                                <ul>
+                                    <li>Innehåller: Gluten, fläsk, äggprotein</li>
+                                </ul>
+                            </figure>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h2>Drinkar</h2>
+                            <p>Välj något att dricka.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <h3>Öl</h3>
+                                <img width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Weizenbier.jpg" />
+                                <ul>
+                                    <li>Innehåller: gluten</li>
+                                </ul>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <h3>Läsk</h3>
+                                <img width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Zevia_Cream_Soda.jpg" />
+                                <form>
+                                    <p>
+                                        <label for="soda">Välj sort:</label>
+                                        <br>
+                                        <select id="soda" name="soda">
+                                            <option>Coca-Cola</option>
+                                            <option>Fanta</option>
+                                            <option selected>Root Beer</option>
+                                            <option>Ginger Ale</option>
+                                        </select>
+                                    </p>
+                                </form>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <h3>Te</h3>
+                                <img width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Darjeeling-tea-first-flush-in-cup.jpg" />
+                                <br>
+                                <label for="temperature">Varmt eller kallt?</label>
+                                <form id="temperature">
+                                    <input checked="checked" name="temp" type="radio" value="hot"> Varmt
+                                    <input name="temp" type="radio" value="cold"> Kallt
+                                </form>
+
+                            </figure>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Twemoji_2705.svg">SKICKA TILL KÖK</button>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2017 Jakob Nyberg</p>
+    </footer>
+</body>
+
+</html>
