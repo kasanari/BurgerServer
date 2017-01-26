@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://fiddle.jshell.net/_display/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="./dummy.js.ladda ned"></script>
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="./result-light.css">
+  
+
+  
+    
+      <script type="text/javascript" src="./firebug-lite-debug.js.ladda ned"></script>
+    
+  
+
+  <style type="text/css">
+    
+  </style>
+
+  <title></title>
+
+  
+    
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+window.onload=function(){
+
+  function MenuItem(name, kcal, gluten, lactose) {
+  	this.name = name;
+  	this.kcal = kcal;
+  	this.gluten = gluten;
+  	this.lactose = lactose;
+  	this.disp = function() {
+  		return "Name: " + this.name + ", KCal: " + this.kcal; 
+  	};
+  }
+	
+  burger1 = new MenuItem("Burger", 123, true, true);
+	burger2 = new MenuItem("Burger Deluxe", 444, true, true);
+	
+	var menu = document.createElement('div');
+	var headline = document.createElement('h1');
+	var txt = document.createTextNode('Välj en burgare: ')
+	headline.appendChild(txt);
+	menu.appendChild(headline);
+	menu.setAttribute("id", "menu");
+	document.body.appendChild(menu);
+	/*
+	menu.appendChild(document.createTextNode(burger1.disp()));
+	menu.appendChild(document.createElement("p"));
+	menu.appendChild(document.createTextNode(burger2.disp())); */
+	var p = document.createElement("p");
+	p.appendChild(document.createTextNode(burger1.disp()));
+	menu.appendChild(p);
+	
+	p = document.createElement("p");
+	p.appendChild(document.createTextNode(burger2.disp()));
+	menu.appendChild(p);
+}//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+  
+  
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+
+
+
+
+<div id="menu"><h1>Välj en burgare: </h1><p>Name: Burger, KCal: 123</p><p>Name: Burger Deluxe, KCal: 444</p></div><iframe src="./saved_resource(2).html" frameborder="0" id="FirebugUI" style="border: 0px; visibility: visible; z-index: 2147483647; position: fixed; width: 100%; left: 0px; bottom: 0px; height: 300px;"></iframe></body></html>

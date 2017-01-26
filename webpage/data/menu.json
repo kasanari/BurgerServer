@@ -1,0 +1,27 @@
+var food = [
+    {
+        "name": "Burgare"
+        , "kCal": 850
+        , "lactose": true
+        , "gluten": true
+        , "img": "https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg"
+    }
+
+    
+    , {
+        "name": "\"Burgare\""
+        , "kCal": 850
+        , "lactose": false
+        , "gluten": true
+        , "img": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Japanese_Soba_Noodles_Tsuta_01.jpg"
+    }
+
+    
+    , {
+        "name": "Deluxeburgare"
+        , "kCal": 950
+        , "lactose": true
+        , "gluten": true
+        , "img": "https://upload.wikimedia.org/wikipedia/commons/7/77/Hamburger_%285%29.jpg"
+    }
+]
