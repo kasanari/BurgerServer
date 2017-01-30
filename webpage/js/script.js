@@ -1,6 +1,5 @@
 "use strict";
 
-
 function docLoaded(fn) {
     if (document.readyState !== 'loading') {
         fn();
@@ -21,10 +20,6 @@ function MenuItem(name, kcal, gluten, lactose, imgsrc) {
 }
 
 function generateMenu() {
-    var items = [];
-    items.push(new MenuItem("Burger", 123, true, true, "https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg"));
-    items.push(new MenuItem("\"Burger\"", 444, true, true, "https://upload.wikimedia.org/wikipedia/commons/0/0a/Japanese_Soba_Noodles_Tsuta_01.jpg"));
-    items.push(new MenuItem("Burger Vego", 333, true, true, "https://upload.wikimedia.org/wikipedia/commons/7/77/Hamburger_%285%29.jpg"));
 
     var menu = document.createElement('div');
     var headline = document.createElement('h1');
@@ -35,17 +30,35 @@ function generateMenu() {
     menu.setAttribute("id", "menu");
     document.body.appendChild(menu);
 
-    var p = document.createElement("p");
-    var image = document.createElement("img");
-
-    items.forEach(function (element) {
-        var image = document.createElement("img")
-            , p = document.createElement("p");
-        image.setAttribute("src", element.imgsrc);
+    food.forEach(function (element) {
+        var image = document.createElement("img");
+        var p = document.createElement("p");
+        var header = document.createElement("h3");
+        var check = document.createElement("input");
+        check.setAttribute("type", "checkbox");
+        check.setAttribute("class", "burgers");
+        check.setAttribute("value", element.name);
+        image.setAttribute("src", element.img);
         image.setAttribute("width", "100px");
-        p.appendChild(document.createTextNode(element.disp()));
+
+        header.appendChild(document.createTextNode(element.name));
+        menu.appendChild(header);
+
+        if (element.lactose) {
+            p.appendChild(document.createElement("br"));
+            p.appendChild(document.createTextNode("Laktos"));
+        }
+
+        if (element.gluten) {
+            p.appendChild(document.createElement("br"));
+            p.appendChild(document.createTextNode("Gluten"));
+        }
+
+
         menu.appendChild(image);
         menu.appendChild(p);
+        menu.appendChild(check);
+
     });
 }
 

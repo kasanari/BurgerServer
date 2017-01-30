@@ -6,11 +6,13 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript" src="data/menu.json"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="js/script.js"></script>
 
     <script>
         docLoaded(indexPageLoaded)
     </script>
+
 </head>
 
 <body>
@@ -107,10 +109,10 @@
                             <figure>
                                 <h3>Te</h3> <img width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Darjeeling-tea-first-flush-in-cup.jpg" />
                                 <br>
-                                <label for="temperature">Varmt eller kallt?</label>
-                                <form id="temperature">
-                                    <input checked="checked" name="temp" type="radio" value="hot"> Varmt
-                                    <input name="temp" type="radio" value="cold"> Kallt </form>
+                                <label for="sugar">Socker?</label>
+                                <form id="sugar">
+                                    <input checked name="hasSugar" type="radio" value="true"> Ja
+                                    <input name="hasSugar" type="radio" value="false"> Nej </form>
                             </figure>
                         </td>
                     </tr>
@@ -118,13 +120,15 @@
             </table>
         </section>
         <div id="submit">
-            <button type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Twemoji_2705.svg">SKICKA TILL KÖK</button>
+            <button v-on:click="sendTo()" type="submit">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Twemoji_2705.svg">SKICKA TILL KÖK</button>
         </div>
     </main>
     <footer>
         <hr>
         <p>&copy; 2017 Jakob Nyberg</p>
     </footer>
+    <script src="js/button.js"></script>
 </body>
 
 </html>
