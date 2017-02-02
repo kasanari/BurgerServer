@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://jsfiddle.net/f8q6dLdq/3/embedded/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="edit-Type" edit="text/html; charset=utf-8">
+
+    
+      <meta name="robots" content="index, follow">
+      <meta name="googlebot" content="index, follow">
+
+      <script async="" src="./analytics.js.ladda ned"></script><script type="text/javascript" src="./highlight.pack.js.ladda ned"></script>
+
+      <script type="text/javascript" src="./embed.js.ladda ned"></script>
+
+
+      
+        <link rel="stylesheet" type="text/css" href="./embed-light.css">
+
+      
+
+      <script type="text/javascript">
+        var height;
+        var force_height = null;
+        var slug = "f8q6dLdq";
+        var show_src = "//fiddle.jshell.net/f8q6dLdq/3/show/light/";
+        var resize_element_counter = 0;
+        var shell_edit_url = '/f8q6dLdq/3/light/';
+
+        
+      </script>
+    
+
+    <link href="./css" rel="stylesheet" type="text/css">
+    <!-- <link href="//fonts.googleapis.com/css?family=Lato:400|Inconsolata" rel="stylesheet" type="text/css"> -->
+
+    <style type="text/css" media="screen">
+      
+      
+      
+      
+    </style>
+
+  </head>
+  <body>
+    <div id="wrapper">
+      
+        <header>
+          <h1><a href="https://jsfiddle.net/f8q6dLdq/3/?utm_source=website&amp;utm_medium=embed&amp;utm_campaign=f8q6dLdq" target="_blank">Edit in JSFiddle</a></h1>
+          <!-- <h1><a href="/f8q6dLdq/3/light/" target="_blank">Edit in JSFiddle</a></h1> -->
+          <div id="actions">
+            <ul class="normalRes">
+              
+                <li class="active">
+                  <a data-trigger-type="js" href="https://jsfiddle.net/f8q6dLdq/3/embedded/#JavaScript">JavaScript</a>
+                </li>
+              
+                <li>
+                  <a data-trigger-type="html" href="https://jsfiddle.net/f8q6dLdq/3/embedded/#HTML">HTML</a>
+                </li>
+              
+                <li>
+                  <a data-trigger-type="css" href="https://jsfiddle.net/f8q6dLdq/3/embedded/#CSS">CSS</a>
+                </li>
+              
+                <li>
+                  <a data-trigger-type="resources" href="https://jsfiddle.net/f8q6dLdq/3/embedded/#Resources">Resources</a>
+                </li>
+              
+                <li>
+                  <a data-trigger-type="result" href="https://jsfiddle.net/f8q6dLdq/3/embedded/#Result">Result</a>
+                </li>
+              
+            </ul>
+            <div class="hl" style="left: 0px; width: 81.0938px;"></div>
+          </div>
+        </header>
+
+        <div id="tabs">
+          
+            
+              
+                <pre class="tCont  active hljs javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MenuItem</span>(<span class="hljs-params">name, kcal, gluten, lactose</span>) </span>{
+  	<span class="hljs-keyword">this</span>.name = name;
+  	<span class="hljs-keyword">this</span>.kcal = kcal;
+  	<span class="hljs-keyword">this</span>.gluten = gluten;
+  	<span class="hljs-keyword">this</span>.lactose = lactose;
+  	<span class="hljs-keyword">this</span>.disp = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  		<span class="hljs-keyword">return</span> <span class="hljs-string">"Name: "</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">", KCal: "</span> + <span class="hljs-keyword">this</span>.kcal; 
+  	};
+  }
+	
+  burger1 = <span class="hljs-keyword">new</span> MenuItem(<span class="hljs-string">"Burger"</span>, <span class="hljs-number">123</span>, <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span>);
+	burger2 = <span class="hljs-keyword">new</span> MenuItem(<span class="hljs-string">"Burger Deluxe"</span>, <span class="hljs-number">444</span>, <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span>);
+	
+	<span class="hljs-keyword">var</span> menu = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+	<span class="hljs-keyword">var</span> headline = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'h1'</span>);
+	<span class="hljs-keyword">var</span> txt = <span class="hljs-built_in">document</span>.createTextNode(<span class="hljs-string">'Välj en burgare: '</span>)
+	headline.appendChild(txt);
+	menu.appendChild(headline);
+	menu.setAttribute(<span class="hljs-string">"id"</span>, <span class="hljs-string">"menu"</span>);
+	<span class="hljs-built_in">document</span>.body.appendChild(menu);
+	<span class="hljs-comment">/*
+	menu.appendChild(document.createTextNode(burger1.disp()));
+	menu.appendChild(document.createElement("p"));
+	menu.appendChild(document.createTextNode(burger2.disp())); */</span>
+	<span class="hljs-keyword">var</span> p = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">"p"</span>);
+	p.appendChild(<span class="hljs-built_in">document</span>.createTextNode(burger1.disp()));
+	menu.appendChild(p);
+	
+	p = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">"p"</span>);
+	p.appendChild(<span class="hljs-built_in">document</span>.createTextNode(burger2.disp()));
+	menu.appendChild(p);</pre>
+              
+            
+          
+            
+              
+                <pre class="tCont hljs"></pre>
+              
+            
+          
+            
+              
+                <pre class="tCont hljs"></pre>
+              
+            
+          
+            
+              <div class="resources tCont" id="resources">
+                <h3>External resources loaded into this fiddle:</h3>
+                <ul>
+                  
+                    <li><a href="https://getfirebug.com/firebug-lite-debug.js" target="_blank">firebug-lite-debug.js</a></li>
+                  
+                </ul>
+              </div>
+              
+            
+          
+            <div class="tCont result" id="result"></div>
+              
+            
+          
+        </div>
+      
+    </div>
+
+    
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
+  if (window.localStorage) {
+    ga('create', 'UA-366077-19', {
+      'storage': 'none',
+      'clientId': localStorage.getItem(GA_LOCAL_STORAGE_KEY)
+    });
+    ga(function(tracker) {
+      localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
+    });
+    ga('send', 'pageview', '/[fiddle]/[revision]/embedded/'); // where `url_structure` is for example `/[user]/[fiddle]/[revision]/embedded/js,css/`
+  }
+</script>
+
+      
+    
+
+  
+
+</body></html>
