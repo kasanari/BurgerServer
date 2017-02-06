@@ -62,6 +62,23 @@ header {
     height: 300px;
 }
 
+#menu {
+    margin: auto;
+    width: 500px;
+}
+
+#menu img {
+    display: inline-block;
+}
+
+#menu p {
+    width: 100px;
+    display: inline-block;
+    margin-left: 20px;
+    background-color: brown;
+    color: aliceblue;
+}
+
 h1,
 h2,
 h3,

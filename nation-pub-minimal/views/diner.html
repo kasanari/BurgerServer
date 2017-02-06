@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title> Page title shown in window title </title>
+    <title> BurgerServer ver. II Electric Boogaloo </title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript" src="data/menu.json"></script>
@@ -117,6 +117,9 @@
                 </tbody>
             </table>
         </section>
+        
+        <div id="jsmenu"></div>
+        
         <div id="submit">
             <button v-on:click="placeOrder()" type="submit"> <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Twemoji_2705.svg">SKICKA TILL KÖK</button>
         </div>
@@ -135,10 +138,6 @@
         </div>
         
     </main>
-    <footer>
-        <hr>
-        <p>&copy; 2017 Jakob Nyberg</p>
-    </footer>
     <script src="js/kitchen.js"></script>
     <script src="js/diner.js"></script>
 </body>

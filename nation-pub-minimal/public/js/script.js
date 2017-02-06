@@ -3,7 +3,8 @@
 function docLoaded(fn) {
     if (document.readyState !== 'loading') {
         fn();
-    } else {
+    }
+    else {
         document.addEventListener('DOMContentLoaded', fn);
     }
 }
@@ -20,50 +21,52 @@ function MenuItem(name, kcal, gluten, lactose, imgsrc) {
 }
 
 function generateMenu() {
-
     var menu = document.createElement('div');
     var headline = document.createElement('h1');
-    var txt = document.createTextNode('Välj en burgare: ');
-
+    var txt = document.createTextNode('Välj en burgare (JavaScript Version): ');
     headline.appendChild(txt);
     menu.appendChild(headline);
     menu.setAttribute("id", "menu");
-    document.body.appendChild(menu);
-
+    document.getElementById("jsmenu").appendChild(menu);
     food.forEach(function (element) {
         var image = document.createElement("img");
         var p = document.createElement("p");
         var header = document.createElement("h3");
+        
         var check = document.createElement("input");
         check.setAttribute("type", "checkbox");
         check.setAttribute("class", "burgers");
         check.setAttribute("name", "item[]");
         check.setAttribute("value", element.name);
+        
         image.setAttribute("src", element.img);
         image.setAttribute("width", "100px");
-
         header.appendChild(document.createTextNode(element.name));
         menu.appendChild(header);
-
         if (element.lactose) {
             p.appendChild(document.createElement("br"));
             p.appendChild(document.createTextNode("Laktos"));
         }
-
         if (element.gluten) {
             p.appendChild(document.createElement("br"));
             p.appendChild(document.createTextNode("Gluten"));
         }
-
-
         menu.appendChild(image);
         menu.appendChild(p);
         menu.appendChild(check);
-
     });
 }
 
+function generateFooter() {
+    var footer = document.createElement("footer");
+    footer.appendChild(document.createElement("hr"));
+    var footertext = document.createElement("p");
+    footertext.appendChild(document.createTextNode("2017 Jakob Nyberg"));
+    footer.appendChild(footertext);
+    document.body.appendChild(footer);
+}
 
 function indexPageLoaded() {
     generateMenu();
+    generateFooter();
 }
